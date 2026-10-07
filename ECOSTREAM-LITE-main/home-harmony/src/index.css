@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600&display=swap');
+
+:root {
+  --sage: #8A9A5B;
+  --terracotta: #E2725B;
+  --warm-bg: #FDFBF7;
+  --soft-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--warm-bg);
+  color: #3C3C3C;
+}
+
+.cozy-card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--soft-shadow);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.cozy-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px -10px rgba(138, 154, 91, 0.15);
+}
+
+.btn-sage {
+  background-color: var(--sage);
+  color: white;
+  border-radius: 16px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-sage:hover {
+  background-color: #7A8A4B;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(138, 154, 91, 0.4);
+}
+
+.sage-accent {
+  color: var(--sage);
+}
